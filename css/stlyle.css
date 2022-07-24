@@ -255,6 +255,11 @@ header {
 .friends-slaid div {
     margin-right: 90px;
     background-color: #FAFAFA;
+    border-radius: 9px;
+}
+
+.friends-slaid div:hover {
+    background-color: #FFFFFF;
 }
 
 .friends-slaid div:last-child {
@@ -270,7 +275,7 @@ header {
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
-    margin: 25px 0  30px;
+    margin: 25px 0 30px;
 }
 
 .friends-slaid a {
@@ -286,3 +291,48 @@ header {
     background: #FDDCC4;
 }
 
+.help-shelter {
+    padding: 80px 0 100px;
+}
+
+.help-shalter-wraper h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    width: 310px;
+    margin: auto;
+}
+
+.help {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.help div {
+    margin: 58px 60px 0;
+}
+
+.help div img {
+    display: block;
+    width: 60px;
+    margin: auto;
+    
+}
+
+.help div p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 30px;
+}
