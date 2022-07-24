@@ -416,3 +416,68 @@ header {
     max-width: 400px;
 
 }
+
+footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 40px;
+}
+
+.footer-wraper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-wraper h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding: 16px 0 33px;
+
+}
+
+footer .footer-wraper>div {
+    width: 300px;
+}
+
+footer p {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: #F1CDB3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    margin-bottom: 25px;
+}
+
+
+footer a {
+    color: #F1CDB3;
+    text-decoration: none;
+}
+
+.animal img{
+    display: block;
+}
+
+.email {
+    background: url(../images/icon-email.svg) no-repeat left center;
+}
+
+.tel {
+    background: url(../images/icon-phone.svg) no-repeat left center;
+}
+
+.local {
+    background: url(../images/icon-marker.svg) no-repeat left center;
+    padding-left: 42px;
+}
