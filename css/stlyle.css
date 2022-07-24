@@ -323,7 +323,7 @@ header {
     display: block;
     width: 60px;
     margin: auto;
-    
+
 }
 
 .help div p {
@@ -335,4 +335,84 @@ header {
     letter-spacing: 0.06em;
     color: #545454;
     margin-top: 30px;
+}
+
+.donation {
+    padding: 80px 0 100px;
+    background-color: #F6F6F6;
+}
+
+.donation-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-dog {
+    width: 56.41%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.donation-text {
+    width: 43.59%;
+}
+
+.donation-text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    max-width: 300px;
+}
+
+.donation-text p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 20px;
+}
+
+#card {
+    display: block;
+    vertical-align: middle;
+    padding: 8px 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    background: #F1CDB3;
+    border-radius: 9px;
+    max-width: 349px;
+}
+
+#card::before{
+    content: url(../images/credit-card.svg);
+    width: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+#donation-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+    max-width: 400px;
+
 }
