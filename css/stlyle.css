@@ -168,14 +168,115 @@ header {
 }
 
 
-.about-pets-wraper img{
+.about-pets-wraper img {
     display: block;
     background-size: 300px;
     padding-right: 125px;
     padding-left: 175px;
 }
 
-.about-pets-text{
+.about-pets-text {
     width: 50%
 }
 
+.friends-pets {
+    background: #F6F6F6;
+    padding: 80px 0 100px;
+}
+
+.friends-wraper h2 {
+    max-width: 400px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.friends-slaid-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 89px;
+}
+
+.friends-slaid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.friends-wraper a {
+    display: block;
+    padding: 15px 45px;
+    width: 262px;
+    margin: auto;
+    text-decoration: none;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.friends-wraper a:hover {
+    background: #FDDCC4;
+}
+
+.right,
+.left {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #F6F6F6;
+    margin-top: 25px;
+}
+
+.left:hover {
+    background: #FDDCC4;
+}
+
+.right:hover {
+    background: #FDDCC4;
+}
+
+.friends-slaid img {
+    width: 270px;
+}
+
+.friends-slaid div {
+    margin-right: 90px;
+}
+
+.friends-slaid div:last-child {
+    margin-right: 0px;
+}
+
+.friends-slaid p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 25px 0  30px;
+}
+
+.friends-slaid a {
+    background-color: #FAFAFA;
+    width: 189px;
+    padding: 14px 43px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
