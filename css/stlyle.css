@@ -129,8 +129,53 @@ header {
     max-width: 58%;
 }
 
-.only-img img{
+.only-img img {
     display: block;
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.about-pets {
+    padding: 80px 0 100px;
+}
+
+.about-pets-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-pets-text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    width: 370px;
+}
+
+.about-pets-text p {
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    width: 430px;
+}
+
+
+.about-pets-wraper img{
+    display: block;
+    background-size: 300px;
+    padding-right: 125px;
+    padding-left: 175px;
+}
+
+.about-pets-text{
+    width: 50%
+}
+
