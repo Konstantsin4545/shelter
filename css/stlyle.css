@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -15,10 +23,15 @@ header {
     width: 100%;
 }
 
-.header-wraper {
+.header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.mobile-menu {
+    width: 60px;
+    display: none;
 }
 
 .menu ul {
@@ -28,8 +41,6 @@ header {
 
 .logo a {
     display: block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
@@ -41,7 +52,6 @@ header {
 
 .logo p {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
@@ -51,7 +61,6 @@ header {
 
 .menu li a {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
@@ -67,7 +76,7 @@ header {
 
 .activ {
     border-bottom: solid #F1CDB3 3px;
-    font-family: 'Arial';
+    font-family: Arial, Helvetica, sans-serif;
     color: #FAFAFA;
 }
 
@@ -76,7 +85,7 @@ header {
     padding: 180px 0 0;
 }
 
-.only-wraper {
+.only-wrapper {
     display: flex;
     justify-content: space-between;
 }
@@ -86,34 +95,30 @@ header {
 }
 
 .only-info h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
     color: #FFFFFF;
     padding: 163px 0 42px;
-    width: 325px;
+    max-width: 325px;
 }
 
 .only-info p {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    width: 460px;
-    padding-bottom: 56px;
+    max-width: 100%;
+    padding-bottom: 41px;
 }
 
 .only-info a {
+    display: inline-block;
     padding: 15px 45px;
     background: #F1CDB3;
     border-radius: 100px;
     text-decoration: none;
-    font-family: 'Georgia';
-    font-style: normal;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
@@ -136,43 +141,41 @@ header {
 }
 
 .about-pets {
-    padding: 80px 0 100px;
+    padding: 81px 0 98px;
 }
 
-.about-pets-wraper {
+.about-pets-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-pets-text h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #545454;
-    width: 370px;
+    max-width: 370px;
 }
 
 .about-pets-text p {
     margin-top: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: #4C4C4C;
-    width: 430px;
+    max-width: 430px;
 }
 
+.about-pets-img {
+    width: 50%;
+    text-align: center;
+}
 
-.about-pets-wraper img {
-    display: block;
-    background-size: 300px;
-    padding-right: 125px;
-    padding-left: 175px;
+.about-pets-wrapper img {
+    padding-left: 47px;
 }
 
 .about-pets-text {
@@ -184,11 +187,9 @@ header {
     padding: 80px 0 100px;
 }
 
-.friends-wraper h2 {
+.friends-wrapper h2 {
     max-width: 400px;
     margin: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
@@ -197,20 +198,20 @@ header {
     color: #545454;
 }
 
-.friends-slaid-wraper {
+.friends-slide-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 60px 0 59px;
 }
 
-.friends-slaid {
+.friends-slide {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    flex-grow: 1;
 }
 
-.friends-wraper a {
+.friends-wrapper a {
     display: block;
     padding: 15px 45px;
     width: 262px;
@@ -218,8 +219,6 @@ header {
     text-decoration: none;
     background: #F1CDB3;
     border-radius: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
@@ -227,7 +226,7 @@ header {
     color: #292929;
 }
 
-.friends-wraper a:hover {
+.friends-wrapper a:hover {
     background: #FDDCC4;
 }
 
@@ -238,6 +237,15 @@ header {
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     background-color: #F6F6F6;
+    cursor: pointer;
+}
+
+.right {
+    margin-left: 53px;
+}
+
+.left {
+    margin-right: 53px;
 }
 
 .left:hover {
@@ -248,27 +256,25 @@ header {
     background: #FDDCC4;
 }
 
-.friends-slaid img {
+.friends-slide img {
     width: 270px;
 }
 
-.friends-slaid div {
-    margin-right: 90px;
+.friends-slide div {
     background-color: #FAFAFA;
     border-radius: 9px;
+    width: 270px;
 }
 
-.friends-slaid div:hover {
+.friends-slide div:hover {
     background-color: #FFFFFF;
 }
 
-.friends-slaid div:last-child {
+.friends-slide div:last-child {
     margin-right: 0px;
 }
 
-.friends-slaid p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
+.friends-slide p {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -278,7 +284,7 @@ header {
     margin: 25px 0 30px;
 }
 
-.friends-slaid a {
+.friends-slide a {
     background-color: #FAFAFA;
     width: 189px;
     padding: 14px 43px;
@@ -287,17 +293,15 @@ header {
     margin-bottom: 30px;
 }
 
-.friends-slaid a:hover {
+.friends-slide a:hover {
     background: #FDDCC4;
 }
 
 .help-shelter {
-    padding: 80px 0 100px;
+    padding: 82px 0 98px;
 }
 
-.help-shalter-wraper h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
+.help-shalter-wrapper h2 {
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
@@ -327,8 +331,6 @@ header {
 }
 
 .help div p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -342,7 +344,7 @@ header {
     background-color: #F6F6F6;
 }
 
-.donation-wraper {
+.donation-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,8 +361,6 @@ header {
 }
 
 .donation-text h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
@@ -370,8 +370,6 @@ header {
 }
 
 .donation-text p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
@@ -384,8 +382,6 @@ header {
     display: block;
     vertical-align: middle;
     padding: 8px 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
@@ -396,7 +392,7 @@ header {
     max-width: 349px;
 }
 
-#card::before{
+#card::before {
     content: url(../images/credit-card.svg);
     width: 30px;
     margin-right: 15px;
@@ -422,15 +418,13 @@ footer {
     padding-top: 40px;
 }
 
-.footer-wraper {
+.footer-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.footer-wraper h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
+.footer-wrapper h2 {
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
@@ -440,7 +434,7 @@ footer {
 
 }
 
-footer .footer-wraper>div {
+footer .footer-wrapper>div {
     width: 300px;
 }
 
@@ -450,8 +444,6 @@ footer p {
     align-items: center;
     padding-left: 60px;
     color: #F1CDB3;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
@@ -465,7 +457,7 @@ footer a {
     text-decoration: none;
 }
 
-.animal img{
+.animal img {
     display: block;
 }
 
@@ -480,4 +472,152 @@ footer a {
 .local {
     background: url(../images/icon-marker.svg) no-repeat left center;
     padding-left: 42px;
+}
+
+@media (max-width: 1230px) {
+    .container {
+        max-width: 95%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .friends-slide div:last-child {
+        display: none;
+    }
+
+    .friends-slide {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 960px) {
+    .footer-wrapper {
+        flex-wrap: wrap;
+
+    }
+
+    footer .footer-wrapper .contacts, footer .footer-wrapper .location {
+        width: 50%;
+    }
+
+    footer .footer-wrapper .animal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .only-info h1{
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 960px) {
+    
+}
+
+@media (max-width: 840px) {
+    .donation-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .donation-dog{
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .donation-text{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .donation-text h2,  .donation-text p{
+        max-width: 400px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+    .friends-slide div + div {
+        display: none;
+    }
+
+    .only-info h1{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 765px){
+    
+
+    .only-img{
+        display: none;
+    }
+    .only-info{
+        max-width: 95%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .only-info h1{
+        display: inline-block;
+    }
+
+    .about-pets-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-pets-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-pets-text{
+        width: 100%;
+    }
+
+    .about-pets-text p, .about-pets-text h2{
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    footer .footer-wrapper .contacts, footer .footer-wrapper .location {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 510px){
+    .friends-slide-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .friends-slide{
+        order: -1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .left, .right {
+        margin: 0 10px;
+    }
 }
