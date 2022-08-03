@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu {
+    width: 60px;
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.logo a {
+    display: block;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.logo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #292929;
+}
+
+.menu li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    display: block;
+    text-decoration: none;
+    margin-right: 36px;
+}
+
+.menu li a:hover{
+    color: #292929;
+}
+
+.menu li:last-child a {
+    margin-right: 0;
+}
+
+.activ {
+    border-bottom: solid #F1CDB3 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292929;
+}
+
+
+
+main {
+    background: #f6f6f6;
+    padding: 80px 0 100px;
+}
+
+h1 {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 45px;
+    font: 400 35px/130% Georgia;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery div {
+    width: 270px;
+    margin: 15px 0;
+    background-color: #FAFAFA;
+    border-radius: 9px;
+}
+
+.gallery p {
+    font: 400 20px/23px Georgia;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 25px 0 30px;
+}
+
+.gallery a {
+    background-color: #FAFAFA;
+    width: 189px;
+    padding: 13px 43px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #292929;
+    letter-spacing: 0.06em;
+    font: 400 17px/130% Georgia;
+}
+
+.gallery a:hover, .gallery div:hover {
+    background: #FFFFFF;
+}
+
+.button-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.button-gallery button{
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: none;
+    width: 52px;
+    height: 52px;
+    color: #292929;
+    font: 400 20px/115% Georgia;
+    cursor: pointer;
+}
+
+
+.button-gallery .active-button{
+    background-color: #F1CDB3;
+}
+
+.button-gallery .inactive-button {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+}
+
+.button-gallery button:hover{
+    border: 2px solid #F1CDB3;
+    background-color: #F1CDB3;
+    color: #292929;
+}
+
+footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 40px;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-wrapper h2 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    padding: 16px 0 33px;
+
+}
+
+footer .footer-wrapper>div {
+    width: 300px;
+}
+
+footer p {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: #F1CDB3;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    margin-bottom: 25px;
+}
+
+
+footer a {
+    color: #F1CDB3;
+    text-decoration: none;
+}
+
+.animal img {
+    display: block;
+}
+
+.email {
+    background: url(../images/icon-email.svg) no-repeat left center;
+}
+
+.tel {
+    background: url(../images/icon-phone.svg) no-repeat left center;
+}
+
+.local {
+    background: url(../images/icon-marker.svg) no-repeat left center;
+    padding-left: 42px;
+}
